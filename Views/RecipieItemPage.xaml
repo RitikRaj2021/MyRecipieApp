@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.RecipieItemPage"
+             Title="Add New Recipie">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Margin="20"
+                Spacing="1"
+                VerticalOptions="StartAndExpand"
+                >
+
+                <Image Source="logo.jpeg"
+                       MaximumWidthRequest="200"
+                       Margin="20">
+                    
+                </Image>
+
+                <!--This is a label -->
+                <Label 
+                    Text="Recipie Name:" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                />
+                <Entry 
+                    Text="{Binding Name}" 
+                    TextColor="White"
+                    BackgroundColor="#364f40"
+                />
+
+                
+                <Label 
+                    Text="Ingridients (Seperate with , )" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                />
+                <Entry 
+                    Text="{Binding Ingridients}" 
+                    TextColor="White"
+                    BackgroundColor="#364f40"
+                />
+
+                
+                <Label 
+                    Text="Step 1:" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                />
+                <Entry 
+                    Text="{Binding Steps}" 
+                    TextColor="White"
+                    BackgroundColor="#364f40"
+                />
+
+                
+                <Label 
+                    Text="Step 2:" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                       
+                />
+                <Entry 
+                    Text="{Binding Steps2}" 
+                    TextColor="White"
+                    BackgroundColor="#364f40"
+                />
+
+                
+                <Label 
+                    Text="Step 3:" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                />
+                <Entry 
+                    Text="{Binding Steps3}" 
+                    TextColor="White"
+                    BackgroundColor="#364f40"
+                />
+
+                
+                <Label 
+                    Text="Step 4:" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                />
+                <Entry 
+                    Text="{Binding Steps4}" 
+                    TextColor="White"
+                    BackgroundColor="#364f40"
+                />
+                
+
+                <Label 
+                    Text="Step 5:" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                />
+                <Entry 
+                    Text="{Binding Steps5}" 
+                    TextColor="White"
+                    BackgroundColor="#364f40"
+                />
+            
+                
+                <Label 
+                    Text="Extra Notes:" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                />
+                <Entry 
+                    Text="{Binding Notes}" 
+                    TextColor="White"
+                    BackgroundColor="#364f40"
+                />
+
+           
+
+                <Button 
+                    Clicked="OnSaveBtnClicked" 
+                    Text="Save New Recipie"
+                    Margin="5"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    />
+
+                <Button 
+                    Clicked="OnDeleteBtnClicked" 
+                    Text="Delete the Recipie"
+                    Margin="5"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    />
+
+                <Button 
+                    Clicked="OnCancelBtnClicked" 
+                    Text="Cancel Changes" 
+                    Margin="5"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
