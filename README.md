@@ -1,4 +1,4 @@
-# App1
+# My Recipie App
 
 You are working for a small app development company called SurfsApp Limited. You've been tasked to create an Android application named "MyRecipes" that can be used record and save recipes. After successful completion and testing the company will publish this app to the Play Store.
 
