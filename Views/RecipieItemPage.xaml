@@ -56,61 +56,8 @@
                     TextColor="White"
                     BackgroundColor="#364f40"
                 />
-
-                
-                <Label 
-                    Text="Step 2:" 
-                    TextColor="White"
-                    FontAttributes="Bold"
-                    FontSize="18"
-                       
-                />
-                <Entry 
-                    Text="{Binding Steps2}" 
-                    TextColor="White"
-                    BackgroundColor="#364f40"
-                />
-
-                
-                <Label 
-                    Text="Step 3:" 
-                    TextColor="White"
-                    FontAttributes="Bold"
-                    FontSize="18"
-                />
-                <Entry 
-                    Text="{Binding Steps3}" 
-                    TextColor="White"
-                    BackgroundColor="#364f40"
-                />
-
-                
-                <Label 
-                    Text="Step 4:" 
-                    TextColor="White"
-                    FontAttributes="Bold"
-                    FontSize="18"
-                />
-                <Entry 
-                    Text="{Binding Steps4}" 
-                    TextColor="White"
-                    BackgroundColor="#364f40"
-                />
-                
-
-                <Label 
-                    Text="Step 5:" 
-                    TextColor="White"
-                    FontAttributes="Bold"
-                    FontSize="18"
-                />
-                <Entry 
-                    Text="{Binding Steps5}" 
-                    TextColor="White"
-                    BackgroundColor="#364f40"
-                />
-            
-                
+                           
+                            
                 <Label 
                     Text="Extra Notes:" 
                     TextColor="White"
@@ -123,7 +70,20 @@
                     BackgroundColor="#364f40"
                 />
 
-           
+
+                <Label 
+                    Text="Created By:" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                />
+                <Entry 
+                    Text="{Binding CreatedByName}" 
+                    TextColor="White"
+                    BackgroundColor="#364f40"
+                />
+
+
 
                 <Button 
                     Clicked="OnSaveBtnClicked" 
