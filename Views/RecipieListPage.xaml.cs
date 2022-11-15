@@ -19,7 +19,7 @@ namespace App1.Views;
         {
             base.OnAppearing();
             RecipieItemDatabase database = await RecipieItemDatabase.Instance;
-            listView.ItemsSource = await database.GetItemsAsync();
+        listView.ItemsSource = await database.GetItemsAsync();
         }
 
         async void OnItemAdded(object sender, EventArgs e)
